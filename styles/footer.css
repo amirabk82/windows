@@ -1,0 +1,187 @@
+footer{
+    height: 45px;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+    direction: rtl;
+    /* justify-content: space-between; */
+    padding: 0 0 0 10px;
+}
+
+
+
+/* right */
+footer > .right{
+    width: 20%;
+    padding: 5px 15px;
+}
+footer > .right > .date{
+    color: #fff;
+    font-size: 11px;
+    width: 80px;
+    cursor: default;
+}
+footer > .right > .date:hover{
+    background-color: rgb(50, 50, 50);
+    border-radius: 4px;
+
+}
+footer > .right > .date-clock{
+
+}
+footer > .right > .date-day{
+    
+}
+
+/* connection */
+footer > .right > .connection{
+    width: 80px;
+    justify-content: center;
+    line-height: 2;
+    position: relative;
+}
+footer > .right > .connection:hover{
+    background-color: rgb(50, 50, 50);
+    border-radius: 4px;
+}
+footer > .right > .connection > .volume{
+    width: 20px;
+    height: 20px;
+}
+footer > .right > .connection > .volume > img{
+    width: 100%;
+    height: 100%;
+}
+footer > .right > .connection > .wifi{
+    width: 20px;
+    height: 20px;
+}
+footer > .right > .connection > .wifi > img{
+    width: 100%;
+    height: 100%;
+}
+footer > .right > .connection > .connectionModal{
+    display: none;
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    top: -410px;
+    right: -60px;
+    box-shadow: -2px 1px 8px 2px rgba(193 ,193 ,193 ,0.3);
+    /* display: none; */
+}
+footer > .right > .connection > .connectionModal > .top{
+    background-color: rgba(43, 43, 44,0.8); 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 80%;
+    width: 100%;
+}
+footer > .right > .connection > .connectionModal > .bottom{
+    background-color: rgba(23, 23, 24,0.8);
+    height: 20%;
+    width: 100%;
+    border-bottom-left-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+}
+
+
+
+/* center */
+footer > .center{
+    width: 50%;
+    direction: ltr;
+}
+footer > .center > div{
+    position: relative;
+    width: 50px;
+    transition: 0.2s;
+    height: 80%;
+    line-height: 2;
+    top: 4px;
+    text-align: center;
+
+}
+footer > .center div:hover{
+    background-color: rgb(46, 46, 47);
+    border-radius: 5px;
+}
+footer > .center div img{
+    width: 40px;
+    height: 75%;
+}
+footer > .center > div > .underline{
+    position: absolute;
+    bottom: -1px;
+    left: 19px;
+    background-color: rgb(160, 160, 160);
+    width: 0px;
+    height: 5px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+/* windows */
+footer > .center > .windows-taskbar{
+    position: relative;
+}
+footer > .center > .windows-taskbar > .windows-taskbar-menu{
+    width: 550px;
+    height: 650px;
+    position: absolute;
+    background-color: rgb(43, 43, 44);
+    border-radius: 10px;
+    box-shadow: -2px 1px 8px 2px rgba(193 ,193 ,193 ,0.3);
+    transition: 0.4s;
+}
+
+.windows-taskbar-menu-show{
+    opacity: 1;
+    visibility: visible;
+    top: -660px;
+}
+.windows-taskbar-menu-hide{
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+}
+
+
+/* search */
+footer > .center > .search-taskbar{
+    width: 200px;
+    height: 70%;
+    position: relative;
+    top: 7px;
+}
+footer > .center > .search-taskbar > input{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+
+}
+footer > .center > .search-taskbar > .search-taskbar-menu{
+    width: 680px;
+    height: 650px;
+    position: absolute;
+    background-color: rgb(43, 43, 44);
+    top: 0;
+    transition: 0.4s;
+    border-radius: 10px;
+    box-shadow: -2px 1px 8px 2px rgba(193 ,193 ,193 ,0.3);
+    opacity: 0;
+    visibility: hidden;
+
+
+}
+
+
+
+
+
